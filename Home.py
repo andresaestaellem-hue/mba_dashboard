@@ -42,7 +42,7 @@ compacto = st.sidebar.checkbox(label='Ativar modo compacto')
 # Checagem para saber se o arquivo foi sibido, se o arquivo não foi subido o progra vai cair la embaixo no "ELSE" não fazendo a leitura que foi definido em if
 
 EMBARGO = 'dados/embargos/embargos_ibama.parquet'
-DESMATAMENTO = 'dados/prodes/prodes-001.parquet'
+DESMATAMENTO = 'dados/mapabiomas_alertas/mapbiomas_alertas.parquet'
 TIS = 'dados/tis_poligonais/tis.parquet'
 
 if arquivo_subido:
