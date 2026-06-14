@@ -1,6 +1,6 @@
 import os
 
-os.environ["PROJ_LIB"] = r"C:\Users\joaoc\anaconda3\envs\mba_car\Library\share\proj"
+# os.environ["PROJ_LIB"] = r"C:\Users\joaoc\anaconda3\envs\mba_car\Library\share\proj"
 
 import streamlit as st
 
@@ -24,9 +24,9 @@ from zona_utm import calcular_utm
 # folium -> Biblioteca de confecção de mapas 
 # treamlit_folium -> Bibliotecas de integração do streamlit com o folium
 
-datadir.set_data_dir(
-    r"C:\Users\joaoc\anaconda3\envs\mba_dashboards\Library\share\proj"
-)
+# datadir.set_data_dir(
+#    r"C:\Users\joaoc\anaconda3\envs\mba_dashboards\Library\share\proj"
+#)
 
 # Funções de disposição de elementos na tela
 st.title('MBA Inteligência em dados ambientais') 
