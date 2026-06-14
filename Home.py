@@ -1,6 +1,6 @@
 import os
 
-# os.environ["PROJ_LIB"] = r"C:\Users\joaoc\anaconda3\envs\mba_car\Library\share\proj"
+#os.environ["PROJ_LIB"] = r"C:\Users\joaoc\anaconda3\envs\mba_car\Library\share\proj"
 
 import streamlit as st
 
@@ -24,7 +24,7 @@ from zona_utm import calcular_utm
 # folium -> Biblioteca de confecção de mapas 
 # treamlit_folium -> Bibliotecas de integração do streamlit com o folium
 
-# datadir.set_data_dir(
+#datadir.set_data_dir(
 #    r"C:\Users\joaoc\anaconda3\envs\mba_dashboards\Library\share\proj"
 #)
 
@@ -229,7 +229,7 @@ elif arquivo_subido and compacto:
 
     @st.cache_resource
     def abrir_embargo():
-        gdf_embargo = gpd.read_file(EMBARGO)
+        gdf_embargo = gpd.read_parquet(EMBARGO)
         return gdf_embargo
     
     @st.cache_resource
